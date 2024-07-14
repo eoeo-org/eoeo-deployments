@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hachimitsu-random-bot
-          image: ghcr.io/zel9278/hachimitsu-random-bot:main@sha256:c7a4fa886f48ab58ef41ad38256c6c2d7dc863fcacb9c95c6eda8d1ecf4d0567
+          image: ghcr.io/zel9278/hachimitsu-random-bot:main
           imagePullPolicy: IfNotPresent # because digest pinning
           envFrom:
             - secretRef:

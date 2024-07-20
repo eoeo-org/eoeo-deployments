@@ -18,6 +18,9 @@ spec:
         - name: twibot-to-discord
           image: ghcr.io/zel9278/twibot-to-discord:main@sha256:56b9f7cb56ad04acf482080260e9440761c5e16fca2794ce6748a682f86b1471
           imagePullPolicy: IfNotPresent # because digest pinning
+          env:
+            - name: ADMIN
+              value: "923158679006625802,615059426369339392"
           envFrom:
             - secretRef:
                 name: ttd-secrets

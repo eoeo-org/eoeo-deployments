@@ -22,11 +22,13 @@ spec:
             - secretRef:
                 name: ttd-secrets
           securityContext:
+            allowPrivilegeEscalation: false
             capabilities:
               drop:
-                - CAP_MKNOD
-                - CAP_NET_RAW
-                - CAP_AUDIT_WRITE
+                - ALL
+            runAsNonRoot: true
+            seccompProfile:
+              type: RuntimeDefault
       tolerations:
         - key: "low-spec"
           operator: "Equal"

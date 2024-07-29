@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: migrate-deploy-
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+        - name: migrate-deploy
+          image: ghcr.io/eoeo-org/pow:3.11.0-migrate
+      restartPolicy: Never
+  backoffLimit: 0

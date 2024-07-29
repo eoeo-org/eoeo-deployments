@@ -10,5 +10,17 @@ spec:
       containers:
         - name: migrate-deploy
           image: ghcr.io/eoeo-org/pow:3.11.0-migrate
+          envFrom:
+            - secretRef:
+                name: pow-secrets
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            runAsNonRoot: true
+            runAsUser: 1000
+            seccompProfile:
+              type: RuntimeDefault
       restartPolicy: Never
   backoffLimit: 0

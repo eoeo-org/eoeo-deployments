@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: twibot-to-discord
-          image: ghcr.io/zel9278/twibot-to-discord:main@sha256:8b933a80da85467e4384be40910cdd436bc57d2a144b78431020edecfdfa7422
+          image: ghcr.io/zel9278/twibot-to-discord:main@sha256:c06bf4f27c09cacac59d258be486e38568368d4f3022cdea367158b7362869ab
           imagePullPolicy: IfNotPresent # because digest pinning
           env:
             - name: ADMIN

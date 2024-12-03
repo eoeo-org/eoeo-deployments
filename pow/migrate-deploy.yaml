@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
         - name: migrate-deploy
-          image: ghcr.io/eoeo-org/pow:3.14.12-migrate@sha256:66b474f4ab87b3db32f64afff55fed03ea37f23e0dbd1252db996eba971c4bde
+          image: ghcr.io/eoeo-org/pow:3.14.13-migrate@sha256:1878f09bbfddf83f4c6c79eb3acc628dded62e4e21644422520f4db337685db5
           envFrom:
             - secretRef:
                 name: pow-secrets

@@ -38,3 +38,6 @@ spec:
           operator: "Equal"
           value: "E2.1.Micro"
           effect: "NoExecute"
+        - effect: NoExecute
+          key: agent
+          operator: Exists

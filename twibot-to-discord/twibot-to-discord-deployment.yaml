@@ -20,7 +20,7 @@ spec:
           imagePullPolicy: IfNotPresent # because digest pinning
           env:
             - name: ADMIN
-              value: "923158679006625802,615059426369339392"
+              value: "923158679006625802,325222935612620800,615059426369339392"
           envFrom:
             - secretRef:
                 name: ttd-secrets

@@ -23,4 +23,13 @@ spec:
             seccompProfile:
               type: RuntimeDefault
       restartPolicy: Never
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: network
+                    operator: NotIn
+                    values:
+                      - detda
   backoffLimit: 0

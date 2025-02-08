@@ -35,6 +35,15 @@ spec:
             requests:
               memory: "130Mi"
               cpu: "15m"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: network
+                    operator: NotIn
+                    values:
+                      - detda
       tolerations:
         - key: "low-spec"
           operator: "Exists"

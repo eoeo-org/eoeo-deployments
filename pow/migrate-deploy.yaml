@@ -28,7 +28,7 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
               - matchExpressions:
-                  - key: network
+                  - key: mogyuchi.jp.node-restriction.kubernetes.io/network
                     operator: NotIn
                     values:
                       - detda

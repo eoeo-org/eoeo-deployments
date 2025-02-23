@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: twibot-to-discord
-          image: ghcr.io/eoeo-org/twibot-to-discord:main@sha256:d08a14a734bcc5059b3adf645f63e935639a847efebca7e12d2b89ff569c06c8
+          image: ghcr.io/eoeo-org/twibot-to-discord:main@sha256:9eb651fe2d8e27ac750f54c7c4201bec6053f291fe343b2e0392dff1fcdf523a
           imagePullPolicy: IfNotPresent # because digest pinning
           env:
             - name: ADMIN

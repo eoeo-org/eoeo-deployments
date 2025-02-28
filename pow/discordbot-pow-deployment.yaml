@@ -44,6 +44,14 @@ spec:
                     operator: NotIn
                     values:
                       - detda
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 1
+              preference:
+                matchExpressions:
+                  - key: topology.kubernetes.io/zone
+                    operator: NotIn
+                    values:
+                      - oracle
       tolerations:
         - key: "low-spec"
           operator: "Exists"

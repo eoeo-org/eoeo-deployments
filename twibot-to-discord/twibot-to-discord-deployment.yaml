@@ -26,7 +26,7 @@ spec:
                       - oracle
       containers:
         - name: twibot-to-discord
-          image: ghcr.io/eoeo-org/twibot-to-discord:main@sha256:d08a14a734bcc5059b3adf645f63e935639a847efebca7e12d2b89ff569c06c8
+          image: ghcr.io/eoeo-org/twibot-to-discord:main@sha256:a959832a7d1b09279924d5c9cbfb6f0b5b0f6df5521f3c2e4e50202ae3a6129b
           imagePullPolicy: IfNotPresent # because digest pinning
           env:
             - name: ADMIN

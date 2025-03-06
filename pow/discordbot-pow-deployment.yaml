@@ -33,7 +33,7 @@ spec:
               type: RuntimeDefault
           resources:
             requests:
-              memory: "130Mi"
+              memory: "256Mi"
               cpu: "15m"
       affinity:
         nodeAffinity:

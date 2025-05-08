@@ -9,8 +9,6 @@
   ],
   "commitBodyTable": true,
   "kubernetes": {
-    "managerFilePatterns": [
-      "/\\.yaml$/"
-    ]
+    "managerFilePatterns": ["/\\.yaml$/"]
   }
 }
